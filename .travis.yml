@@ -1,4 +1,4 @@
-# https://travis-ci.org/#!/phlax/dj.subcommand
+# https://travis-ci.org/#!/translate/dj.subcommand
 sudo: false
 language: python
 python:

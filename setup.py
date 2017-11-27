@@ -24,7 +24,7 @@ setup(
     version='0.0.3',
     description='Django subcommand',
     long_description='Django subcommand',
-    url='https://github.com/phlax/dj.subcommand',
+    url='https://github.com/translate/dj.subcommand',
     author='Ryan Northey',
     author_email='ryan@synca.io',
     license='GPL3',
