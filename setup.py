@@ -5,7 +5,7 @@
 """
 
 # Always prefer setuptools over distutils
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 
 install_requires = ['django']
@@ -39,6 +39,5 @@ setup(
     keywords='django subcommand',
     install_requires=install_requires,
     extras_require=extras_require,
-    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
-    namespace_packages=['dj'],
+    packages=find_namespace_packages(exclude=['contrib', 'docs', 'tests*']),
     include_package_data=True)

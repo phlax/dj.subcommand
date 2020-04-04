@@ -15,6 +15,10 @@ class SubcommandsError(CommandError):
 
 class SubcommandsParser(CommandParser):
 
+    def __init__(self, cmd=None, **kwargs):
+        self.cmd = cmd
+        super(SubcommandsParser, self).__init__(**kwargs)
+
     def parse_args(self, args):
         try:
             # first find if we have a known subcommand
@@ -47,6 +51,10 @@ class SubcommandsParser(CommandParser):
 
 
 class SubcommandsSubParser(CommandParser):
+
+    def __init__(self, cmd=None, **kwargs):
+        self.cmd = cmd
+        super(SubcommandsSubParser, self).__init__(**kwargs)
 
     def format_help(self):
         parent = self.cmd.create_parser("", "")
